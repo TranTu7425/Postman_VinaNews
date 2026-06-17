@@ -50,6 +50,7 @@ Tài liệu này ghi lại kết quả kiểm thử thủ công các API của d
 ## III. Kết Quả Kiểm Thử API Công Khai (Public APIs)
 
 ### 1. Đăng Ký Tài Khoản Mới
+![Đăng ký tài khoản](./dky.png)
 * **Phương thức:** `POST`
 * **Đường dẫn:** `http://localhost:3000/api/register`
 * **Body gửi lên (JSON):**
@@ -73,6 +74,7 @@ Tài liệu này ghi lại kết quả kiểm thử thủ công các API của d
 * **Trạng thái:** Hoạt động tốt.
 
 ### 2. Lấy Danh Sách Bình Luận Của Bài Viết
+![Danh sách bình luận](./dsbinhluan.png)
 * **Phương thức:** `GET`
 * **Đường dẫn:** `http://localhost:3000/api/articles/cmq7giaqy007mc1nbmoq8fgel/comments`
 * **Kết quả trả về (Response - 200 OK):**
@@ -120,6 +122,7 @@ Tài liệu này ghi lại kết quả kiểm thử thủ công các API của d
 ## IV. Kết Quả Kiểm Thử API Yêu Cầu Đăng Nhập (Authenticated APIs)
 
 ### 1. Thích Bài Viết (Like Article)
+![Like bài viết](./like.png)
 * **Phương thức:** `POST`
 * **Đường dẫn:** `http://localhost:3000/api/articles/cmq7giaqy007mc1nbmoq8fgel/like`
 * **Header:** Đã đính kèm Cookie đăng nhập hợp lệ.
@@ -132,6 +135,7 @@ Tài liệu này ghi lại kết quả kiểm thử thủ công các API của d
 * **Trạng thái:** Hoạt động tốt. Lượt thích bài viết đã được ghi nhận vào database cho tài khoản người dùng tương ứng.
 
 ### 2. Lưu Bài Viết (Save/Bookmark Article)
+![Like bài viết](./save.png)
 * **Phương thức:** `POST`
 * **Đường dẫn:** `http://localhost:3000/api/articles/cmq7giaqy007mc1nbmoq8fgel/save`
 * **Header:** Đã đính kèm Cookie đăng nhập hợp lệ.
@@ -144,6 +148,7 @@ Tài liệu này ghi lại kết quả kiểm thử thủ công các API của d
 * **Trạng thái:** Hoạt động tốt. Trạng thái lưu bài viết được lưu trữ và cập nhật chính xác.
 
 ### 3. Đăng Bình Luận Mới (Create Comment)
+![Đăng bình luận](./binhluan.png)
 * **Phương thức:** `POST`
 * **Đường dẫn:** `http://localhost:3000/api/articles/cmq7giaqy007mc1nbmoq8fgel/comments`
 * **Header:** Đã đính kèm Cookie đăng nhập hợp lệ.
